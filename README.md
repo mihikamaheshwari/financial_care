@@ -1,8 +1,5 @@
-# Project Bolt
-
 A modern React-based website built with TypeScript, Vite, and Tailwind CSS. This project features a responsive design with multiple sections including Home, About, Services, and Contact pages.
 
-## Features
 
 - 📱 Fully responsive design
 - 🎨 Modern UI with Tailwind CSS
