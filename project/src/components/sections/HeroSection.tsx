@@ -59,16 +59,16 @@ const HeroSection: React.FC = () => {
       
       {/* Enhanced Content */}
       <div className="container relative z-20 h-full flex flex-col justify-center items-start">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-7xl w-full"
-        >
-          {/* Title with Logo - No spacing */}
-          <div className="flex items-center justify-between w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full">
+          {/* Left side - Text content */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-4"
+          >
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white flex-shrink-0 relative leading-tight mb-0"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, type: "spring" }}
@@ -78,94 +78,85 @@ const HeroSection: React.FC = () => {
               </span>
             </motion.h1>
             
-            {/* Logo without background container */}
-            <motion.div
-              className="flex-shrink-0 ml-8"
-              initial={{ opacity: 0, x: 150 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ 
-                duration: 1.2, 
-                delay: 0.5,
-                type: "spring",
-                stiffness: 60,
-                damping: 20
-              }}
-            >
-              <motion.img 
-                src="/images/logo/logo.png" 
-                alt="Financial Care Logo" 
-                className="h-28 w-auto sm:h-36 md:h-44 lg:h-52 xl:h-60 relative z-10 drop-shadow-2xl"
-                initial={{ opacity: 0.8 }}
-                animate={{ 
-                  opacity: [0.8, 1, 0.8],
-                  y: [0, -5, 0],
-                }}
-                transition={{ 
-                  opacity: {
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  },
-                  y: {
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }
-                }}
-                whileHover={{ 
-                  scale: 1.05,
-                  opacity: 1,
-                  transition: { 
-                    duration: 0.3,
-                    ease: "easeOut"
-                  }
-                }}
-              />
-            </motion.div>
-          </div>
-          
-          {/* Tagline positioned very close */}
-          <motion.div 
-            className="mb-8 max-w-3xl -mt-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
+            {/* Tagline positioned close */}
             <motion.p 
               className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-tight drop-shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
             >
               Finance your dreams with confidence and expertise
             </motion.p>
+
+            {/* Buttons */}
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-6 pt-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link to="/services" className="btn bg-white text-primary hover:bg-neutral-100 font-medium text-lg px-8 py-4 shadow-2xl">
+                  Our Services
+                </Link>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link to="/contact" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 font-medium text-lg px-8 py-4">
+                  Contact Now
+                </Link>
+              </motion.div>
+            </motion.div>
           </motion.div>
 
-          {/* Buttons - Left aligned and positioned higher */}
-          <motion.div 
-            className="flex flex-col sm:flex-row gap-6 relative"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+          {/* Right side - Logo positioned slightly left and higher up */}
+          <motion.div
+            className="flex justify-start items-center pl-8 -mt-16"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ 
+              duration: 1.2, 
+              delay: 0.5,
+              type: "spring",
+              stiffness: 60,
+              damping: 20
+            }}
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link to="/services" className="btn bg-white text-primary hover:bg-neutral-100 font-medium text-lg px-8 py-4 shadow-2xl">
-                Our Services
-              </Link>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link to="/contact" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 font-medium text-lg px-8 py-4">
-                Contact Now
-              </Link>
-            </motion.div>
+            <motion.img 
+              src="/images/logo/logo.png" 
+              alt="Financial Care Logo" 
+              className="h-56 w-auto sm:h-72 md:h-80 lg:h-96 xl:h-112 drop-shadow-2xl"
+              animate={{ 
+                opacity: [0.9, 1, 0.9],
+                y: [0, -8, 0],
+              }}
+              transition={{ 
+                opacity: {
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                },
+                y: {
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }
+              }}
+              whileHover={{ 
+                scale: 1.05,
+                transition: { 
+                  duration: 0.3,
+                  ease: "easeOut"
+                }
+              }}
+            />
           </motion.div>
-        </motion.div>
+        </div>
       </div>
       
       {/* Background shape */}
