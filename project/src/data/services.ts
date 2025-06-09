@@ -28,7 +28,7 @@ export const services: ServiceType[] = [
   {
     id: 5,
     title: "S.I.F / A.I.F",
-    description: "Alternative Investment Fund and Social Impact Fund solutions for sophisticated investors seeking diversified investment opportunities.",
+    description: "Alternative Investment Fund and Systematic Investment Fund solutions for sophisticated investors seeking diversified investment opportunities.",
     icon: "Building"
   },
   {

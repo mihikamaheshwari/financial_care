@@ -12,12 +12,12 @@ const About: React.FC = () => {
 
   const milestones = [
     {
-      year: '2005',
+      year: '2004',
       title: 'Qualified as Chartered Accountant',
       description: 'Received certification from the Institute of Chartered Accountants of India.'
     },
     {
-      year: '2008',
+      year: '2006',
       title: 'Established Financial Care',
       description: 'Founded Financial Care with a vision to provide comprehensive financial services.'
     },
@@ -29,7 +29,7 @@ const About: React.FC = () => {
     {
       year: '2018',
       title: 'Reached 500+ Client Milestone',
-      description: 'Successfully served over 500 clients across various industries.'
+      description: 'Successfully served over 1650 clients across various industries.'
     }
   ];
 
@@ -71,7 +71,7 @@ const About: React.FC = () => {
                 subtitle="CA Lalit Kabra, Director of Financial Care"
               />
               <p className="mb-4 text-neutral-600">
-                CA Lalit Kabra is a seasoned Chartered Accountant with over 15 years of experience in providing 
+                CA Lalit Kabra is a seasoned Chartered Accountant with over 20 years of experience in providing 
                 comprehensive financial services. He specializes in tax planning, business auditing, and financial advisory 
                 for individuals and businesses alike.
               </p>

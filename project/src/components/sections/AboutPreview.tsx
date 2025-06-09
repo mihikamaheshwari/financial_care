@@ -6,8 +6,8 @@ import { Award, Users, Clock, TrendingUp } from 'lucide-react';
 
 const AboutPreview: React.FC = () => {
   const stats = [
-    { icon: <Users className="w-8 h-8 text-primary" />, value: "650+", label: "Happy Clients" },
-    { icon: <Clock className="w-8 h-8 text-primary" />, value: "18", label: "Years Experience" },
+    { icon: <Users className="w-8 h-8 text-primary" />, value: "1650+", label: "Happy Clients" },
+    { icon: <Clock className="w-8 h-8 text-primary" />, value: "20", label: "Years Experience" },
     { icon: <Award className="w-8 h-8 text-primary" />, value: "100%", label: "Client Satisfaction" },
     { icon: <TrendingUp className="w-8 h-8 text-primary" />, value: "100%", label: "Success Rate" }
   ];
@@ -29,7 +29,7 @@ const AboutPreview: React.FC = () => {
             />
             
             <p className="mb-6 text-neutral-600">
-              CA Lalit Kabra brings over 18 years of expertise in financial advisory, tax planning, and business auditing. 
+              CA Lalit Kabra brings over 20 years of expertise in financial advisory, tax planning, and business auditing. 
               His commitment to excellence and client satisfaction has made Financial Care a trusted name in the industry.
             </p>
             

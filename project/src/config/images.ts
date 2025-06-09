@@ -49,7 +49,7 @@ export const imageAlts = {
     wealthManagement: 'Wealth management and planning',
     mutualFunds: 'Mutual funds investment advisory',
     pms: 'Portfolio Management Services',
-    sifAif: 'Social Impact Fund and Alternative Investment Fund',
+    sifAif: 'Systematic Investment Fund and Alternative Investment Fund',
     taxPlanning: 'Tax planning and optimization services',
     homeLoan: 'Home loan assistance and consultation',
     businessLoan: 'Business loan and financing solutions'

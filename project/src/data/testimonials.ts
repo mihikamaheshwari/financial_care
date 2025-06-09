@@ -3,20 +3,20 @@ import { TestimonialType } from '../types';
 export const testimonials: TestimonialType[] = [
   {
     id: 1,
-    name: "Rahul Mehta",
-    role: "Small Business Owner",
-    content: "CA Lalit Kabra has been handling our company's finances for over 5 years. His expertise and attention to detail have saved us from numerous tax complications."
+    name: "Raj Kumar Lakhwani",
+    role: "Business Owner",
+    content: "Financial Care has been our trusted financial advisor for years. Their strategic investment planning and tax optimization strategies have significantly improved our business profitability and cash flow management."
   },
   {
     id: 2,
-    name: "Priya Sharma",
-    role: "Startup Founder",
-    content: "The financial advisory services provided by Financial Care have been instrumental in helping our startup grow sustainably. Highly recommended!"
+    name: "Mukesh Birla",
+    role: "Business Owner",
+    content: "The comprehensive financial advisory services provided by Financial Care have been exceptional. From retirement planning to systematic investment funds, they've helped secure our family's financial future with expert guidance."
   },
   {
     id: 3,
-    name: "Vikram Singh",
-    role: "Corporate Executive",
-    content: "Professional, prompt, and precise. CA Lalit Kabra's tax planning strategies have consistently optimized our financial operations."
+    name: "Vinod Suriya",
+    role: "Corporate Dealer",
+    content: "As a corporate dealer, I needed sophisticated financial solutions. Financial Care's expertise in portfolio management, risk assessment, and market analysis has consistently delivered outstanding results for my investments."
   }
 ];

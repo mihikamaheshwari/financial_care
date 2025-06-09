@@ -88,7 +88,7 @@ const Services: React.FC = () => {
       id: 5,
       features: [
         "Alternative investment opportunities",
-        "Social impact investment options",
+        "Systematic investment opportunities",
         "Private equity fund access",
         "Hedge fund strategies",
         "Due diligence and fund analysis"
